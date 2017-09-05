@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 功能配置文件 -->
+
+    <!-- 注：
+       ××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××
+       优先级  客户配置文件 > 主工程配置文件 >  common模块配置文件
+       ××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××
+    -->
+
+
+    <!--  ××××××××××××××××××××××××××××  桌面风格  ××××××××××××××××××××××××××××  -->
+
+    <!--  主题的默认包名  -->
+    <string name="def_apply_theme_package">com.freeme.freemelite.odm</string>
+
+    <!--  桌面字体颜色 , 默认白色 -->
+    <color name="def_workspace_label_color">#FFFFFFFF</color>
+
+    <!--  桌面行列数 （ 行 × 列）
+        -1: 自适应
+        0: 4 x 4
+        1: 5 x 4
+        2: 4 x 5
+        3: 5 x 5-->
+    <integer name="def_grid_rows_columns">1</integer>
+
+
+    <!-- def_grid_icon_custom_enable 为true时，自定义图标文字大小生效，
+         包含： def_grid_icon_size
+               def_grid_label_size
+               def_hotseat_icon_size
+         false : 则自适应屏幕
+     -->
+    <bool name="def_grid_icon_custom_enable">true</bool>
+
+    <!-- 桌面应用图标大小 -->
+    <dimen name="def_grid_icon_size">48dp</dimen>
+    <!-- 桌面应用名称大小 -->
+    <dimen name="def_grid_label_size">12dp</dimen>
+
+    <bool name="def_hotseat_label_show_enable">true</bool>
+
+    <!-- 桌面应用切换动画
+     0:  系统
+     1:  左滑动
+     2:  右滑动
+     3:  上滑动
+     4:  下滑动
+     5:  缩放
+     6:  旋转    -->
+    <integer name="def_pending_anim_style">0</integer>
+
+    <!-- 桌面图标未读信息角标显示 -->
+    <bool name="feature_icon_unread_support">true</bool>
+
+    <!--  桌面加载动画  -->
+    <bool name="def_launcher_loading_view_enable">true</bool>
+
+
+    <!-- 桌面风格切换 -->
+    <bool name="feature_desktop_style_change_enable">true</bool>
+
+    <!-- 用户向导动画 -->
+    <bool name="def_user_guide_enable">false</bool>
+
+    <!--  使用系统默认壁纸作为默认主题壁纸  -->
+    <bool name="def_use_system_default_wallpaper">true</bool>
+
+    <!-- 桌面布局行列切换 -->
+    <bool name="feature_desktop_grid_change_enable">false</bool>
+
+    <!-- ××××××××××××××××××××××××××××  AllApps  ××××××××××××××××××××××××××××  -->
+
+    <!-- 是否启用AllApp, 进入双层桌面 -->
+    <bool name="def_allapp_enable">false</bool>
+    <!--  ALLAPP显示模式
+    0: 字母分组
+    1: 垂直滚动不分组  -->
+    <integer name="def_allapp_display_mode">0</integer>
+
+    <!-- AllApps 显示最近打开应用 -->
+    <bool name="feature_allapp_recently_apps_enable">true</bool>
+
+
+    <!-- ××××××××××××××××××××××××××××  小部件，快捷方式，设置  ××××××××××××××××××××××××××××  -->
+    <!-- 手电筒 -->
+    <bool name="feature_torch_enable">false</bool>
+    <!-- 自动亮度 -->
+    <bool name="feature_auto_light_enable">true</bool>
+    <!-- 省电模式 -->
+    <bool name="feature_battery_save_enable">true</bool>
+
+    <!-- 一键加速是否显示内存使用百分比 -->
+    <bool name="def_clean_widget_show_percent">false</bool>
+
+    <!-- ××××××××××××××××××××××××××××  负一瓶新闻页  ××××××××××××××××××××××××××××  -->
+    <bool name="feature_left_news_page_enable">true</bool>
+    <bool name="def_left_news_page_enable">true</bool>
+
+    <!-- ××××××××××××××××××××××××××××  桌面搜索框  ××××××××××××××××××××××××××××  -->
+    <bool name="feature_search_box_enable">true</bool>
+    <bool name="def_search_box_enable">false</bool>
+
+    <!-- ××××××××××××××××××××××××××××  应用管理   ××××××××××××××××××××××××××××  -->
+    <bool name="feature_app_manager_enable">true</bool>
+    <bool name="def_app_manager_enable">true</bool>
+
+    <!-- ××××××××××××××××××××××××××××  本地通知   ××××××××××××××××××××××××××××  -->
+    <bool name="feature_local_push_enable">true</bool>
+
+    <!-- ××××××××××××××××××××××××××××  美化中心   ××××××××××××××××××××××××××××  -->
+    <bool name="feature_live_wallpaper_enable">false</bool>
+
+    <!-- ××××××××××××××××××××××××××××  应用分类   ××××××××××××××××××××××××××××  -->
+    <!-- 默认布局分类 -->
+    <bool name="def_category_default_layout">false</bool>
+    <!-- 新安装应用自动分类 -->
+    <bool name="def_category_new_apps">false</bool>
+
+    <!-- ××××××××××××××××××××××××××××  桌面设置   ××××××××××××××××××××××××××××  -->
+    <!-- 检查更新 -->
+    <bool name="feature_check_update_support">true</bool>
+    <!-- 用户推荐 -->
+    <bool name="feature_sw_share_support">false</bool>
+
+    <!-- ××××××××××××××××××××××××××××  快捷方式   ××××××××××××××××××××××××××××  -->
+    <bool name="feature_install_shortcut_enable">true</bool>
+    <string-array name="def_shortcut_black_list">
+        <item>com.ume.browser</item>
+    </string-array>
+    <string-array name="def_widget_black_list">
+        <item>com.storm.smart</item>
+    </string-array>
+</resources>
